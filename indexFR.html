@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="icon" type="image/png" href=".\assets\logo.png"/>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"><a href="indexEN.html">EN</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#aboutfr">A propos</a></li>
+          <li><a href="#experiencefr">Compétences</a></li>
+          <li><a href="#projectsfr">Projets</a></li>
+          <li><a href="#contactfr">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Amélie Masson</div>
+      <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#aboutfr" onclick="toggleMenu()">A propos</a></li>
+        <li><a href="#experiencefr" onclick="toggleMenu()">Compétences</a></li>
+        <li><a href="#projectsfr" onclick="toggleMenu()">Projets</a></li>
+        <li><a href="#contactfr" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+    </nav>
+
+    <div class="section-wrapper">
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="assets\ID-modified.png" alt="profile pic"/>
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Bonjour, je suis</p>
+            <h1 class="title">Amélie Masson</h1>
+            <p class="section__text__p2"> Développeuse Full-Stack</p>
+            <div class="btn-container">
+              <button 
+                class="btn btn-color-2" 
+                onclick="window.open('./assets/CV_Amelie_Masson_2024.pdf')">
+                Télécharger mon CV
+              </button>
+              <button class="btn btn-color-1" onclick="location.href='#contactfr'">
+                Contact 
+              </button>
+            </div>
+            <div id="socials-container">
+              <img 
+                src="assets\linkedin.png" 
+                alt="my linkedin profile" 
+                class="icon" 
+                onclick="location.href='https://linkedin.com/in/amélie-masson-06270999'"
+              />
+              <img 
+              src="assets\github.png" 
+              alt="my github profile" 
+              class="icon" 
+              onclick="location.href='https://github.com'"
+              />
+            </div>
+        </div>
+        
+      </section>
+      <section id="aboutfr">
+        <h1 class="title">A propos de moi</h1>
+        <div class="section-container">
+          <div class="section__pic-container">
+            <img 
+              src="assets/about-pic.png" 
+              alt="Profile picture" 
+              class="about-pic"/>
+         </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img 
+              src="assets/experience.png" 
+              alt="experience icon" 
+              class="icon"
+              />
+              <h3>Expérience</h3>
+              <p>3+ Années <br />Accueil (Musées)</p>
+              <p>1 an <br /> Marketing</p>
+            </div>
+            <div class="details-container">
+              <img 
+              src="assets/education.png" 
+              alt="education icon" 
+              class="icon"
+              />
+              <h3>Formation</h3>
+              <p>Licence de Langues Etrangères Appliquées (2015)  Anglais/Spanish - Paris Diderot<br/>
+              <!-- <br> 2024/2025 : Titre RNCP Développeur Concepteur d'Applications - ADA TECH SCHOOL</p> -->
+            </div>
+          </div>
+          <div class="text-container">
+          <p>Après avoir passé plusieurs années dans le monde de l'accueil, j'ai décidé de changer de direction et me mettre un défi, en apprenant à développer des sites web. 
+            <br>J'ai choisi l'école ADA TECH SCHOOL pour faire ce changement, inspirée par leurs valeurs féministes et inclusives, qui sont fondamentales pour moi.
+            <br>J'ai découvert un nouveau monde dans lequel je m'épanouis et qui me donne envie d'en savoir toujours plus !
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    </section>
+
+    <section id="experiencefr">
+      <!-- <p class="section__text__p1">An overview of my</p> -->
+      <h1 class="title">Mes compétences</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Développement Full-Stack</h2>
+            <div class="article-container">
+              <article>
+                <img 
+                  src="assets/logoHTML.png" 
+                  alt="experience icon" 
+                  class="icon"
+                  />
+                <div>
+                  <h3>HTML</h3>
+                  </div>
+              </article>
+              <article>
+                <img 
+                src="assets/logoCSS.png" 
+                alt="experience icon" 
+                class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                </div>
+              </article>
+              <article>
+                <img 
+                src="assets/logoJS.png" 
+                alt="experience icon" 
+                class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                </div>
+              </article>
+              <article>
+                <img 
+                src="assets/logoReact.png" 
+                alt="experience icon" 
+                class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                </div>
+              </article>
+              <article>
+                <img 
+                src="assets/logoKotlin.jpeg" 
+                alt="experience icon" 
+                class="icon"
+                />
+                <div>
+                  <h3>Kotlin</h3>
+                </div>
+              </article><article>
+                <img 
+                src="assets/logoNode.png" 
+                alt="experience icon" 
+                class="icon"
+                />
+                <div>
+                  <h3>Node.js</h3>
+                </div>
+              </article> <article>
+                <img 
+                src="assets/logoPHP.png" 
+                lt="experience icon" 
+                class="icon">
+                <div>
+                  <h3>PHP</h3>
+                </div>
+              </article> <article>
+                <img 
+                src="assets/logoGO.png" 
+                lt="experience icon" 
+                class="icon">
+                <div>
+                  <h3>Go</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Mes outils</h2>
+            <div class="article-container">
+              
+              
+              <article>
+              <img 
+                src="assets/logoGit.png" 
+                alt="experience icon"
+                class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+              </div>
+              </article>
+              <article>
+                <img 
+                  src="assets/logoVsCode.jpeg"
+                  alt="experience icon"
+                  class="icon">
+                <div>
+                  <h3>VS Code</h3>
+                </div>
+              </article>
+              <article>
+                <img 
+                src="assets/logoFigma.png" 
+                alt="experience icon" 
+                class="icon">
+                <div>
+                  <h3>Figma</h3>
+                </div>
+              </article>
+              <article>
+                <img 
+                src="assets/logoCanva.jpeg" 
+                alt="experience icon" 
+                class="icon">
+                <div>
+                  <h3>Canva</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+
+<section id="projectsfr">
+        <!-- <p class="section__text__p1">Quelques</p> -->
+        <h1 class="title">Mes Projets</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="assets/Projet1-Elliot2.png" alt="project 1" class="project-img">
+            </div>
+            <h2 class="experience-sub-title project-title">Elliot's Website</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/AmelieMariaM/Projet-Site-Elliot/tree/main'">Github</button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="assets/Projet2-Extension2.png" alt="project 2" class="project-img">
+            </div>
+            <h2 class="experience-sub-title project-title">Have a break, Have a Kitty-Kat</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/AmelieMariaM/Projet-extension-chrome'">Github</button>
+
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="assets/Projet3-Citron.png" alt="project 3" class="project-img">
+            </div>
+            <h2 class="experience-sub-title project-title">Citron - Pico 8</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/AmelieMariaM/projet-collectif-pico-8-citron'">Github</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='assets/pico8.mp4'">Live Demo</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+
+      <section id="contactfr">
+          <!-- <p class="section__text__p1">Get in Touch</p> -->
+          <h1 class="title">Me Contacter</h1>
+          <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+              <img src="assets/email.png" alt="email icon" class="icon contact-icon"/>
+              <p><a href="mailto:example@gmail.com">ameliemasson78@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+              <img src="assets/linkedin.png" alt="Linkedin icon" class="icon contact-icon"/>
+              <p><a href='https://linkedin.com/in/amélie-masson-06270999'>LinkedIn</a></p>
+            </div>
+            
+          </div>
+      </section>
+    </div>
+
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#aboutfr">A propos</a></li>
+              <li><a href="#experiencefr">Compétences</a></li>
+              <li><a href="#projectsfr">Projets</a></li>
+              <li><a href="#contactfr">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2024 Amélie Masson. All Rights Reserved </p>
+      </footer>
+    <script src = "script.js"></script>
+    </script>
+  </body>
+</html>
